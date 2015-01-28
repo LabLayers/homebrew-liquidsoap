@@ -109,9 +109,9 @@ def schroedinger?
   ARGV.include? '--with-dirac' or ARGV.include? '--with-all'
 end
 
-def cry?
-  ARGV.include? '--with-shout' or ARGV.include? '--with-all'
-end
+#def cry?
+#  ARGV.include? '--with-shout' or ARGV.include? '--with-all'
+#end
 
 def shine?
     ARGV.include? '--with-shine' or ARGV.include? '--with-all'
