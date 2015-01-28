@@ -109,9 +109,9 @@ def schroedinger?
   ARGV.include? '--with-dirac' or ARGV.include? '--with-all'
 end
 
-#def cry?
-#  ARGV.include? '--with-shout' or ARGV.include? '--with-all'
-#end
+def cry?
+  ARGV.include? '--with-shout' or ARGV.include? '--with-all'
+end
 
 def shine?
     ARGV.include? '--with-shine' or ARGV.include? '--with-all'
@@ -146,7 +146,7 @@ class Liquidsoap < Formula
   depends_on 'ocaml-findlib' => :build
   depends_on 'ocaml-dtools' => :build
   depends_on 'ocaml-duppy' => :build
-  depends_on 'ocaml-cry' if cry? # This package contains an OCaml low level implementation of the shout protocol.
+  # depends_on 'ocaml-cry' if cry? # This package contains an OCaml low level implementation of the shout protocol.
   depends_on 'ocaml-shine' if shine?
   depends_on 'ocaml-pcre'
   depends_on 'ocaml-camomile'
